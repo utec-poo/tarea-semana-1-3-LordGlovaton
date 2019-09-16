@@ -2,12 +2,18 @@
 #include "Tipos.h"
 using namespace std;
 
-int main() {
 
-entero numero;
-cin >> numero;
+int main(){
+  int numero;
+  
+ cout<<"número:";
+ cin>>numero;
 
-// ToDO
-// implemente el algoritmo.
+ if(numero>=10 and  numero<=30){
+   for(int i=1;i<=numero;++i)
+    cout<<(char(42));
+ }
+ else
+  cout<<"esta fuera del rango";
   return 0;
 }
