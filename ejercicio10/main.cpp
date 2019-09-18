@@ -1,18 +1,25 @@
 #include <iostream>
-#include "Tipos.h"
 using namespace std;
+entero main() {
+  entero num,aux,resto, numinv=0;
+  cout<<"ingre un número";
+  cin>>num;
 
-int main() {
+  aux=num;
 
-entero numero;
-caracter crt;
+  while(aux>0){
 
-cout << "ingrese el caracter:";
-cin >> crt;
-cout << "\ningrese el numero:";
-cin >> numero;
+    resto=aux%10;
+    aux=aux/10;
+    numinv=numinv*10+resto;
+    cout<<numinv<<endl;
 
-// ToDO
-// implemente el algoritmo.
+  }
+
+  if(numinv==num)
+    cout<<"el número es capicúa";
+  else
+    cout<<"el número no es capicúa";
+
   return 0;
 }
