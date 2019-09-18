@@ -9,6 +9,8 @@ cin>>filas;
 
 if(filas<=30 and filas>=1){
 for(int i=0;i<filas;i++){
+  for(int k=0;k<(filas-1)-i;k++){
+    cout<<" ";}
   for(int k=0;k<(i*2)+1;k++){
     cout<<"*";}
   cout<<endl;}}
@@ -18,4 +20,3 @@ for(int i=0;i<filas;i++){
 
   return 0;
 }
-
