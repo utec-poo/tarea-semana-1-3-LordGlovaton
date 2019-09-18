@@ -11,6 +11,15 @@ int main() {
         cin >> segundos;
     } while (segundos <1);
 
-    // ToDO
+     min=segundos/60;
+    cout<<"minutos"<<min;
+    seg=segundos%60;
+    cout<<"segundos"<<seg;
+    horas=min/60;
+    cout<<"horas"<<horas;
+cout<<"El resultado es"<<Convertir(segundos, horas, min, seg);
+    return 0;
+}
+
     return 0;
 }
